@@ -1,0 +1,214 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+        /* Custom styles for the full-width container */
+        .full-width-container {
+            width: 100%;
+            height: 100vh; /* Full height of the screen */
+            background-color: #f3f4f6; /* Light background color */
+            overflow: hidden; /* Prevent image from overflowing */
+        }
+        .image {
+            object-fit: cover; /* Ensures the image covers the container */
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        .flip-container {
+          perspective: 1000px;
+        }
+    
+        .flip-card {
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          cursor: pointer;
+        }
+    
+        .flip-card:hover {
+          transform: rotateY(180deg);
+        }
+    
+        .flip-card img {
+          backface-visibility: hidden;
+        }
+
+        
+
+
+
+
+        
+  /* Flip container with perspective */
+  .flip-container {
+    perspective: 1000px; /* Create 3D effect */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Image wrapper with flip effect */
+  .flip-img {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out; /* Smooth transition */
+  }
+
+  /* On hover, apply the flip effect */
+  .flip-container:hover .flip-img {
+    transform: rotateY(180deg); /* Flip on hover */
+  }
+
+  /* Hide the back side of the image */
+  .flip-img img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side */
+    border-radius: 0.5rem; /* Optional: rounded corners */
+  }
+
+
+
+
+  .rotate-image {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Rotate the image on hover */
+.flip-img:hover .rotate-image {
+    transform: rotate(360deg);
+}
+
+
+
+/* Add this CSS for slide-in animation */
+.slide-in-img {
+  opacity: 0;
+  transform: translateX(-100%);  /* Initially, position the image off-screen to the left */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Define the transition */
+}
+
+.slide-in {
+  animation: slideIn 1s forwards; /* Apply animation to the entire box */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0% {
+      transform: translateY(0); /* Start at normal position */
+  }
+  20% {
+      transform: translateY(-10px); /* Move up slightly */
+  }
+  40% {
+      transform: translateY(0); /* Return to normal */
+  }
+  60% {
+      transform: translateY(-5px); /* Move up slightly again */
+  }
+  80% {
+      transform: translateY(0); /* Final return to normal */
+  }
+  100% {
+      transform: translateY(0); /* End at normal position */
+  }
+}
+
+/* Apply bounce animation to the image */
+.bounce {
+  animation: bounce 1s ease infinite; /* Infinite bounce */
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Slide-up animation for text */
+@keyframes slideUp {
+  0% {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Animations */
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 1.5s ease-in-out forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeIn 1.5s ease-in-out, slideUp 1.5s ease-in-out;
+}
+
+/* Hover effect on images */
+.transition-transform {
+  transition: transform
+
+
+
+
+
+  @keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-animate {
+    animation: zoomIn 1s ease-out;
+}
+
+/* Optional hover effect */
+.image-animate:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+  
+.flip-container {
+  perspective: 1000px;
+}
+
+/* Flip effect for the image */
+.flip-image {
+  transition: transform 0.6s;  /* Smooth flip transition */
+  transform-style: preserve-3d; /* Ensure the 3D effect is preserved */
+}
+
+/* On hover, apply the flip effect */
+.flip-image:hover {
+  transform: rotateY(180deg); /* Flip the image on hover */
+}
+
+

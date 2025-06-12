@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Punjabi Samosas Recipe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <div class="bg-orange-600 text-white text-center py-6">
+        <h1 class="text-4xl font-semibold">Authentic Punjabi Samosas</h1>
+    </div>
+
+    <!-- Recipe Image Section -->
+    <div class="flex justify-center mt-8">
+        <div class="w-full max-w-lg">
+            <img class="rounded-lg shadow-xl w-full" src="samosaa/images (1).jpeg" alt="Authentic Punjabi Samosas" style="height: 300px; width: 500px; object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- Recipe Description Section -->
+    <div class="flex justify-center mt-6">
+        <div class="w-full max-w-lg bg-white p-6 shadow-lg rounded-lg">
+            <p class="text-lg text-gray-700 text-center">
+                <b>These Authentic Punjabi Samosas are crispy, flavorful, and stuffed with a delicious blend of spiced potatoes, peas, and chutneys. They are perfect as an appetizer or snack!</b>
+            </p>
+        </div>
+    </div>
+
+    <!-- Ingredients and Directions Section -->
+    <div class="mt-8 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Ingredients Section -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-orange-600">Ingredients</h3>
+                
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Potato Filling:</h4>
+                    <ul class="list-disc pl-6 mt-2 text-lg text-gray-700">
+                        <li>Cooking oil 3 tbs</li>
+                        <li>Hari mirch (Green chilli) chopped 1 tbs</li>
+                        <li>Adrak lehsan paste (Ginger garlic paste) 1 & ½ tsp</li>
+                        <li>Sabut dhania (Coriander seeds) roasted & crushed 1 tbs</li>
+                        <li>Zeera (Cumin seeds) roasted & crushed 1 tsp</li>
+                        <li>Himalayan pink salt 1 tsp or to taste</li>
+                        <li>Haldi powder (Turmeric powder) 1 tsp</li>
+                        <li>Lal mirch powder (Red chilli powder) 1 tsp or to taste</li>
+                        <li>Aloo (Potatoes) boiled 4-5 medium</li>
+                        <li>Matar (Peas) boiled 1 Cup</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Green Chutney:</h4>
+                    <ul class="list-disc pl-6 mt-2 text-lg text-gray-700">
+                        <li>Podina (Mint leaves) 1 Cup</li>
+                        <li>Hara dhania (Fresh coriander) ½ Cup</li>
+                        <li>Lehsan (Garlic) 3-4 cloves</li>
+                        <li>Hari mirch (Green chilies) 4-5</li>
+                        <li>Chanay (Roasted grams) 2 tbs</li>
+                        <li>Zeera (Cumin seeds) 1 tsp</li>
+                        <li>Himalayan pink salt ½ tsp or to taste</li>
+                        <li>Lemon juice 2 tbs</li>
+                        <li>Water 3-4 tbs</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Meethi Imli ki Chutney:</h4>
+                    <ul class="list-disc pl-6 mt-2 text-lg text-gray-700">
+                        <li>Imli pulp (Tamarind pulp) ¼ Cup</li>
+                        <li>Aloo bukhara (Dried plums) soaked 10-12</li>
+                        <li>Sugar 2 tbs</li>
+                        <li>Sonth powder (Dried ginger powder) ½ tsp</li>
+                        <li>Kala namak (Black salt) ¼ tsp</li>
+                        <li>Zeera powder (Cumin powder) 1 tsp</li>
+                        <li>Lal mirch powder (Red chilli powder) ¼ tsp or to taste</li>
+                        <li>Water ¼ Cup</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Samosa Dough:</h4>
+                    <ul class="list-disc pl-6 mt-2 text-lg text-gray-700">
+                        <li>Maida (All-purpose flour) sifted 3 Cups</li>
+                        <li>Himalayan pink salt 1 tsp or to taste</li>
+                        <li>Ajwain (Carom seeds) ½ tsp</li>
+                        <li>Ghee (Clarified butter) ¼ Cup</li>
+                        <li>Lukewarm water 1 Cup or as required</li>
+                        <li>Cooking oil for frying</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Directions Section -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold text-orange-600">Directions</h3>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Potato Filling:</h4>
+                    <ol class="list-decimal pl-6 mt-2 text-lg text-gray-700">
+                        <li>In a frying pan, add cooking oil, green chilli, ginger garlic paste, coriander seeds, cumin seeds, pink salt, turmeric powder, red chilli powder, mix well & cook for a minute.</li>
+                        <li>Add potatoes, peas, mix well & mash well with the help of masher then mix well & cook for 1-2 minutes.</li>
+                        <li>Let it cool.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Green Chutney:</h4>
+                    <ol class="list-decimal pl-6 mt-2 text-lg text-gray-700">
+                        <li>In a grinder, add mint leaves, fresh coriander, garlic, green chilli, roasted grams, cumin seeds, pink salt, lemon juice, water & grind to make a thick paste & set aside.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Meethi Imli ki Chutney:</h4>
+                    <ol class="list-decimal pl-6 mt-2 text-lg text-gray-700">
+                        <li>In a saucepan, add tamarind pulp, dried plums, sugar, ginger powder, black salt, cumin powder, red chilli powder, water, mix well & bring it to boil then mash well with the help of masher, strain & set aside.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800">Prepare Samosa Dough:</h4>
+                    <ol class="list-decimal pl-6 mt-2 text-lg text-gray-700">
+                        <li>In a bowl, add all-purpose flour, pink salt, carom seeds & mix well.</li>
+                        <li>Add clarified butter & mix well until it crumbles.</li>
+                        <li>Gradually add water, mix well & knead until dough is formed, cover with cling film & let it rest for 20 minutes.</li>
+                        <li>Knead dough again until smooth.</li>
+                        <li>Make small dough balls of 80g, place them in a dish, cover & let them rest for 10 minutes.</li>
+                        <li>Take one dough ball & roll out with the help of rolling pin then cut into 2 halves.</li>
+                        <li>On one side of dough, apply water on edges, join two sides/edges to make a cone & press gently to seal the cones.</li>
+                        <li>Fill the cone with prepared potato filling (1 tbs) & add 1 tsp of prepared green chutney.</li>
+                        <li>Apply water on the edges & bring the edges together and seal edges with water.</li>
+                        <li>Prepare the remaining samosas similarly (makes 18).</li>
+                        <li>Can be stored in freezer for up to 1 month.</li>
+                        <li>In a wok, heat cooking oil (150°C) & fry samosas on very low flame until golden & crispy.</li>
+                        <li>Fill squeeze dropper with prepared meethi imli ki chutney & fix it in fried samosa & serve!</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

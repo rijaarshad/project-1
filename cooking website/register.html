@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <script>
+    function validateField(field) {
+      const firstName = document.getElementById('first-name');
+      const lastName = document.getElementById('last-name');
+      const username = document.getElementById('username');
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+
+      const errorFirst = document.getElementById('error-first');
+      const errorLast = document.getElementById('error-last');
+      const errorUsername = document.getElementById('error-username');
+      const errorEmail = document.getElementById('error-email');
+      const errorPassword = document.getElementById('error-password');
+
+      // Clear all errors first
+      errorFirst.textContent = "";
+      errorLast.textContent = "";
+      errorUsername.textContent = "";
+      errorEmail.textContent = "";
+      errorPassword.textContent = "";
+
+      if (field === 'last-name' && !firstName.value.trim()) {
+        errorFirst.textContent = "Please enter your first name first.";
+      }
+
+      if (field === 'username') {
+        if (!firstName.value.trim() && !lastName.value.trim()) {
+          errorUsername.textContent = "Please enter your first and last name first.";
+        } else if (!lastName.value.trim()) {
+          errorLast.textContent = "Please enter your last name first.";
+        }
+      }
+
+      if (field === 'email' && (!firstName.value.trim() || !lastName.value.trim() || !username.value.trim())) {
+        if (!firstName.value.trim()) errorFirst.textContent = "Please enter your first name first.";
+        if (!lastName.value.trim()) errorLast.textContent = "Please enter your last name first.";
+        if (!username.value.trim()) errorUsername.textContent = "Please enter your username first.";
+      }
+
+      if (field === 'password' && !email.value.trim()) {
+        errorEmail.textContent = "Please enter your email first.";
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">Create an Account</h2>
+    <form>
+      <label class="block mb-2">
+        <span class="text-gray-700">First Name</span>
+        <input id="first-name" type="text" class="mt-1 block w-full border rounded p-2" onfocus="validateField('first-name')">
+        <p id="error-first" class="text-red-500 text-sm mt-1"></p>
+      </label>
+
+      <label class="block mb-2">
+        <span class="text-gray-700">Last Name</span>
+        <input id="last-name" type="text" class="mt-1 block w-full border rounded p-2" onfocus="validateField('last-name')">
+        <p id="error-last" class="text-red-500 text-sm mt-1"></p>
+      </label>
+
+      <label class="block mb-2">
+        <span class="text-gray-700">Username</span>
+        <input id="username" type="text" class="mt-1 block w-full border rounded p-2" onfocus="validateField('username')">
+        <p id="error-username" class="text-red-500 text-sm mt-1"></p>
+      </label>
+
+      <label class="block mb-2">
+        <span class="text-gray-700">Email</span>
+        <input id="email" type="email" class="mt-1 block w-full border rounded p-2" onfocus="validateField('email')">
+        <p id="error-email" class="text-red-500 text-sm mt-1"></p>
+      </label>
+
+      <label class="block mb-4">
+        <span class="text-gray-700">Password</span>
+        <input id="password" type="password" class="mt-1 block w-full border rounded p-2" onfocus="validateField('password')">
+        <p id="error-password" class="text-red-500 text-sm mt-1"></p>
+      </label>
+
+      <button type="submit" class="w-full bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600">
+        Sign Up
+      </button>
+
+      <p class="text-sm text-center mt-4">
+        Already have an account? <a href="login.html" class="text-orange-500 hover:underline">Login</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
